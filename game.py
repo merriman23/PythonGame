@@ -13,8 +13,27 @@ print ("You chose", userSelection)
 possibleChoices = ['Rock','Paper','Scissors']
 
 # computer selection
-
 computerSelection = random.choices(possibleChoices)
-print('Computer chose', computerSelection)
+print('Computer chose', str(computerSelection))
+
+# Evalutate results - conditional statement
+
+if (userSelection == computerSelection):
+    print ("You tied")
+elif (userSelection == "Rock"):
+    if computerSelection == "Paper":
+        print("You lost")
+    else:
+        print("You won")
+elif (userSelection == "Paper"):
+    if computerSelection == "Scissors":
+        print("You lost")
+    else:
+        print("You won")
+elif (userSelection == "Scissors"):
+    if computerSelection == "Rock":
+        print("You lost")
+    else:
+        print("You won")
 
 
