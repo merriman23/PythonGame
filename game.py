@@ -5,15 +5,17 @@
 # declare a winner
 
 import random
+possibleChoices = ['Rock','Paper','Scissors']
 
+while True:
 
 userSelection = input("What is your selection? (Rock, Paper, or Scissors)  : ")
 # TODO validate user selection
 print ("You chose", userSelection)
-possibleChoices = ['Rock','Paper','Scissors']
+
 
 # computer selection
-computerSelection = random.choices(possibleChoices)
+computerSelection = random.choice(possibleChoices)
 print('Computer chose', str(computerSelection))
 
 # Evalutate results - conditional statement
@@ -35,5 +37,4 @@ elif (userSelection == "Scissors"):
         print("You lost")
     else:
         print("You won")
-
 
